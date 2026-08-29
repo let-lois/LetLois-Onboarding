@@ -1,4 +1,5 @@
 export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
       colors: {
@@ -22,12 +23,6 @@ export default {
       },
       fontFamily: {
         sans: ['Manrope', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-      },
-      maxWidth: {
-        content: [
-  './index.html',
-  './src/**/*.{js,ts,jsx,tsx}'
-],
       },
       transitionTimingFunction: {
         smooth: 'cubic-bezier(0.23, 1, 0.32, 1)',
