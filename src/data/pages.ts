@@ -2,9 +2,7 @@ import {
   BuildingIcon,
   GlobeIcon,
   HandshakeIcon,
-  KeyRoundIcon,
-  GraduationCapIcon,
-  MegaphoneIcon,
+  ImageIcon,
   PartyPopperIcon } from
 'lucide-react';
 import type { OnboardingPage } from '../types/onboarding';
@@ -18,11 +16,11 @@ export const pages: OnboardingPage[] = [
   eyebrow: 'Start here',
   title: 'Welcome to LetLois.',
   blurb:
-  'Five short parts, each with a video and a form. Watch, fill it out, move to the next.',
+  'Three short parts, each with a video and a form. Watch, fill it out, move to the next.',
   icon: HandshakeIcon,
   videoTitle: 'Welcome from Josh and the LetLois founders',
   videoCaption: 'A welcome message from the LetLois founders.',
-  wistiaId: 'dveqq1nr8j'
+  wistiaId: 'wr1cv49vhe'
 },
 {
   id: 2,
@@ -37,78 +35,51 @@ export const pages: OnboardingPage[] = [
   icon: BuildingIcon,
   videoTitle: 'Part 1 — Business information',
   videoCaption: 'Alyssa explains the business details and A2P registration.',
-  formUrl: '#',
-  formLabel: 'Open the Part 1 form'
+  wistiaId: 'xdc0zrpviq',
+  formEmbedUrl: 'https://letlois-onboarding-forms.josh-40d.workers.dev/ads/a2p/',
+  formUrl: 'https://letlois-onboarding-forms.josh-40d.workers.dev/ads/a2p/',
+  formLabel: 'Start the Part 1 form'
 },
 {
   id: 3,
-  slug: 'part-2-website',
+  slug: 'part-2-website-and-funnels',
   kind: 'part',
   partNumber: 2,
-  navLabel: 'Website',
+  navLabel: 'Website & Funnels',
   eyebrow: 'Part 2',
-  title: 'Your new website',
+  title: 'Your Website',
   blurb:
-  'What we need to know to build your site — services, service area, offers, photos, and how you want to be found.',
+  'Everything we need to build your site and landing pages — services, service area, offers, photos, and brand assets.',
   icon: GlobeIcon,
-  videoTitle: 'Part 2 — Website details',
-  videoCaption: 'What we ask for so we can build your website.',
-  formUrl: '#',
-  formLabel: 'Open the Part 2 form'
+  videoTitle: 'Part 2 — Website, funnels, and offers',
+  videoCaption:
+  'What we ask for so we can build your website and landing pages.',
+  wistiaId: 'okdiswshgi',
+  formEmbedUrl: 'https://letlois-onboarding-forms.josh-40d.workers.dev/ads/website/',
+  formUrl: 'https://letlois-onboarding-forms.josh-40d.workers.dev/ads/website/',
+  formLabel: 'Start the Part 2 form'
 },
 {
   id: 4,
-  slug: 'part-3-access',
+  slug: 'part-3-assets',
   kind: 'part',
   partNumber: 3,
-  navLabel: 'Access',
+  navLabel: 'Assets',
   eyebrow: 'Part 3',
-  title: 'Access for the LetLois team',
+  title: 'Assets - Photos, Videos & Offers',
   blurb:
-  'Your domain, hosting, Google, and Meta accounts. You stay the owner — we just need invites so we can build and track.',
-  icon: KeyRoundIcon,
-  videoTitle: 'Part 3 — Backend access',
-  videoCaption: 'Which accounts we need access to, and how to grant it safely.',
-  formUrl: '#',
-  formLabel: 'Open the Part 3 form'
+  'Real job photos — before and afters, your team, your trucks — plus any video you have. We use them across your site, landing pages, and any creative we build for you.',
+  icon: ImageIcon,
+  videoTitle: 'Part 3 — Photos and videos',
+  videoCaption:
+  'What to send, and why real photos beat stock every time.',
+  wistiaId: '97ahyunsvz',
+  formEmbedUrl: 'https://letlois-onboarding-forms.josh-40d.workers.dev/ads/assets/',
+  formUrl: 'https://letlois-onboarding-forms.josh-40d.workers.dev/ads/assets/',
+  formLabel: 'Start the Part 3 form'
 },
 {
   id: 5,
-  slug: 'part-4-community',
-  kind: 'part',
-  partNumber: 4,
-  navLabel: 'Community',
-  eyebrow: 'Part 4',
-  title: 'Community and course access',
-  blurb:
-  'Who on your team should get logins to the LetLois community and training course.',
-  icon: GraduationCapIcon,
-  videoTitle: 'Part 4 — Community and courses',
-  videoCaption: 'Setting up your seats in the community and course.',
-  formUrl: '#',
-  formLabel: 'Open the Part 4 form'
-},
-{
-  id: 6,
-  slug: 'part-5-funnels-and-ads',
-  kind: 'part',
-  partNumber: 5,
-  navLabel: 'Funnels & Ads',
-  eyebrow: 'Part 5',
-  title: 'Funnels, landing pages, and ads',
-  blurb:
-  'Assets and offers for the funnels we build, plus access to your Meta Ads Manager and Google Ads Manager.',
-  icon: MegaphoneIcon,
-  optional: true,
-  optionalNote:
-  'Ads plans only. If ads are not part of your plan, skip straight to the last page.',
-  videoTitle: 'Part 5 — Funnels and ads (Ads plans only)',
-  videoCaption: 'Funnel assets and ad account access — skip if ads are not in your plan.',
-  formUrl: '#',
-  formLabel: 'Open the Part 5 form'
-},
-{
-  id: 7,
   slug: 'thank-you',
   kind: 'outro',
   navLabel: 'Thank you',
@@ -118,7 +89,8 @@ export const pages: OnboardingPage[] = [
   'Our team reviews your answers within one business day and reaches out to book your kickoff call.',
   icon: PartyPopperIcon,
   videoTitle: 'Thank you from Josh and the LetLois founders',
-  videoCaption: 'A closing note on what happens next.'
+  videoCaption: 'A closing note on what happens next.',
+  wistiaId: '6mrmclvgf9'
 }];
 
 
